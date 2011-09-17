@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">helloandroid</string>
+  <string name="hello">Helo, my name is Android</string>
+  <string name="submitYourName">Submit name</string>
+</resources>

@@ -1,0 +1,20 @@
+# IntelliJ IDEA folder
+.idea
+
+# Generated files
+bin/
+gen/
+
+# files for the dex VM
+*.dex
+
+# built application files
+*.apk
+*.ap_
+
+# Java class files
+*.class
+
+# Local configuration files
+*.iml
+*.properties
