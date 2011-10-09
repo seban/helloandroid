@@ -15,6 +15,12 @@
           android:padding="10dp"
           android:text="@string/submitYourName"
     />
+  <Button android:id="@+id/showToast"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:padding="10dp"
+          android:text="@string/showMeToast"
+  />
 
   <TextView android:id="@+id/textView"
             android:layout_height="fill_parent"

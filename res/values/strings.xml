@@ -2,4 +2,6 @@
   <string name="app_name">helloandroid</string>
   <string name="hello">Helo, my name is Android</string>
   <string name="submitYourName">Submit name</string>
+  <string name="showMeToast">Show me toast</string>
+  <string name="cheersAndroid">Cheers, I am Android!</string>
 </resources>

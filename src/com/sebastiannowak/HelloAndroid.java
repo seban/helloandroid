@@ -3,6 +3,7 @@ package com.sebastiannowak;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Package: com.sebastiannowak
@@ -28,6 +30,8 @@ public class HelloAndroid extends Activity {
     final TextView textView = (TextView) findViewById(R.id.textView);
     final EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
     final Button submitName = (Button) findViewById(R.id.submitName);
+    final Button showToast = (Button) findViewById(R.id.showToast);
+
     submitName.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -40,6 +44,14 @@ public class HelloAndroid extends Activity {
           // wyświetlenie powitania
           textView.setText("Welcome, " + name + "!");
         }
+      }
+    });
+    showToast.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_LONG;
+        Toast.makeText(context, R.string.cheersAndroid, duration).show();
       }
     });
   }
